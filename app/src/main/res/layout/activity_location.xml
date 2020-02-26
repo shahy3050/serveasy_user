@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.SearchActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="354dp" />
+
+    <TextView
+        android:id="@+id/search_text_view"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:text="Search Garage"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/search_spinner"
+        app:layout_constraintEnd_toStartOf="@id/right_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/left_guideline" />
+
+    <Spinner
+        android:id="@+id/search_spinner"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/colorPrimary"
+        android:entries="@array/location"
+        android:outlineAmbientShadowColor="@color/textColor"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:prompt="@string/search_area"
+        app:layout_constraintBottom_toTopOf="@+id/search_garage_button"
+        app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/left_guideline" />
+
+    <Button
+        android:id="@+id/search_garage_button"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Search"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/left_guideline" />
+</androidx.constraintlayout.widget.ConstraintLayout>
