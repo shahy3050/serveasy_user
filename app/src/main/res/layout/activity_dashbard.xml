@@ -52,7 +52,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/services_card_view"
+            android:id="@+id/profile_card_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="70dp"
@@ -60,7 +60,7 @@
             app:cardBackgroundColor="@color/white">
 
             <ImageView
-                android:id="@+id/services_image_view"
+                android:id="@+id/profile_image_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/services">
