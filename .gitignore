@@ -12,6 +12,8 @@ app/build/
 # Java class files
 *.class
 
+app/google-services.json
+
 # Generated files
 bin/
 gen/

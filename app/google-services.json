@@ -15,11 +15,56 @@
       },
       "oauth_client": [
         {
+          "client_id": "69071196158-d7gjj1psv8bdfobmpgr36qqc4unrghm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.new_serveasy",
+            "certificate_hash": "39a89d16a6342d1d6cf80b54e122593c3d871e12"
+          }
+        },
+        {
           "client_id": "69071196158-6fu2epk1ttd228nrln7oh97gd9m9ban8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.new_serveasy",
             "certificate_hash": "4fcc0b071efd25b68ff7fa90ec5862c63055b2e2"
+          }
+        },
+        {
+          "client_id": "69071196158-c0cgrlkomuimae67h8bh5o81istj8g0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbGJPrlCkp8x15Gl7AQtEi3T7URCR4jUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69071196158-c0cgrlkomuimae67h8bh5o81istj8g0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69071196158:android:902f4c5b47ed49af21faaf",
+        "android_client_info": {
+          "package_name": "com.example.serveasy_garage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69071196158-1cgvussnhudrlemam5ge58pfeibsfg6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serveasy_garage",
+            "certificate_hash": "39a89d16a6342d1d6cf80b54e122593c3d871e12"
           }
         },
         {
