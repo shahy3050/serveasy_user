@@ -1,74 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
 
     android:orientation="vertical"
-    app:cardCornerRadius="25dp">
+    app:cardCornerRadius="10dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linear_vehicle_item"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:background="@color/white"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp">
 
         <TextView
             android:id="@+id/v_type_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/v_rcnumber_tv"
+            app:layout_constraintEnd_toStartOf="@+id/v_brand_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/v_brand_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/v_model_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/v_type_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/v_model_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="5dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/v_modelyear_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/v_rcnumber_tv"
+            app:layout_constraintTop_toBottomOf="@+id/v_brand_tv" />
 
         <TextView
             android:id="@+id/v_modelyear_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="4dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/v_fueltype_tv"
+            app:layout_constraintTop_toBottomOf="@+id/v_model_tv" />
 
         <TextView
             android:id="@+id/v_fueltype_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="4dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/v_modelyear_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_rcnumber_tv" />
 
         <TextView
             android:id="@+id/v_rcnumber_tv"
-            android:layout_width="350dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="5dp"
             android:textColor="@color/textColor"
-            android:textSize="22sp" />
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/v_fueltype_tv"
+            app:layout_constraintEnd_toStartOf="@+id/v_model_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_type_tv" />
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

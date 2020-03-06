@@ -1,11 +1,6 @@
 package com.example.new_serveasy.activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.new_serveasy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -44,10 +43,10 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_signup);
+        setContentView(R.layout.activity_signup);
 
         //Binding Views
-        UserNameET = findViewById(R.id.uname_text_view_signup);
+        UserNameET = findViewById(R.id.uname_editext_signup);
         EmailET = findViewById(R.id.email_edit_text_signup);
         PasswordET = findViewById(R.id.password_edittext_signup);
         ConfirmPassET = findViewById(R.id.conf_pass_edit_text);
@@ -56,7 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
         SigninTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUpActivity.this,SignInActivity.class);
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -154,8 +153,8 @@ public class SignUpActivity extends AppCompatActivity {
 
 
                     Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_SHORT).show();
-                    saveDisplayName();
-                    Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+//                    saveDisplayName();
+                    Intent intent = new Intent(SignUpActivity.this, ProfileActivity.class);
                     finish();
                     startActivity(intent);
                 }
@@ -166,12 +165,12 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
 
-    // TODO: Save the display name to Shared Preferences
+    /*// TODO: Save the display name to Shared Preferences
     private void saveDisplayName() {
         String displayname = UserNameET.getText().toString();
         SharedPreferences prefs = getSharedPreferences(CHAT_PREFS, 0);
         prefs.edit().putString(DISPLAY_NAME_KEY, displayname).apply();
-    }
+    }*/
 
 
     // TODO: Create an alert dialog to show in case registration failed

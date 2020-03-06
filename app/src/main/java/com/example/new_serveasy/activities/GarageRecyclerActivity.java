@@ -1,6 +1,7 @@
 package com.example.new_serveasy.activities;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,50 +15,29 @@ import java.util.ArrayList;
 
 public class GarageRecyclerActivity extends AppCompatActivity {
 
+    private RecyclerView recyclerView;
+    private GarageAdapter garageAdapter;
+    private ArrayList<Garage> garageArrayList;
+    Bundle b;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garage_recyler);
+        b = getIntent().getExtras();
 
 
-        //TODO: Create Dummy Data
-        ArrayList<Garage> garages = getDummyData();
+        recyclerView = findViewById(R.id.garage_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setHasFixedSize(true);
 
-        //TODO: Bind Recycler View
-        RecyclerView garageRecyclerView = findViewById(R.id.garage_recycler_view);
 
-        //TODO: Layout Manager
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
-        garageRecyclerView.setLayoutManager(linearLayoutManager);
-
-        //TODO: View Model and Adapter
-        GarageAdapter garagesAdapter = new GarageAdapter(garages);
-        garageRecyclerView.setAdapter(garagesAdapter);
+        garageArrayList = b.getParcelableArrayList("garageList");
+        Log.d("GL", garageArrayList + "");
+        garageAdapter = new GarageAdapter(garageArrayList);
+        recyclerView.setAdapter(garageAdapter);
 
 
     }
-
-    private ArrayList<Garage> getDummyData() {
-
-        ArrayList<Garage> garages = new ArrayList<>();
-
-        garages.add(new Garage("Bikers Den", "Kothrud"));
-        garages.add(new Garage("Vroom Auto Repair", "Kothrud"));
-        garages.add(new Garage("Vehicle Gurus", "Kothrud"));
-        garages.add(new Garage("Anand Garage", "Kothrud"));
-        garages.add(new Garage("Car o Care", "Kothrud"));
-        garages.add(new Garage("Vehicle Ninjas", "Kothrud"));
-        garages.add(new Garage("Automech Garages", "Kothrud"));
-        garages.add(new Garage("Sai Auto Garage", "Kothrud"));
-        garages.add(new Garage("Vehicle Point", "Kothrud"));
-        garages.add(new Garage("Car Care", "Kothrud"));
-        garages.add(new Garage("Vinyl Care", "Kothrud"));
-        garages.add(new Garage("Om AutoCare", "Kothrud"));
-        garages.add(new Garage("Lakshya Car Care", "Kothrud"));
-
-
-        return garages;
-    }
-
-
 }

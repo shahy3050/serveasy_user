@@ -2,15 +2,18 @@ package com.example.new_serveasy.models;
 
 public class User {
 
-    public User(String userId, String userName, String userEmail, String userContact, String userAddress) {
+    public User(String userId, String userName, String userGender, String userContact, String userAddress) {
         this.userId = userId;
         this.userName = userName;
-        this.userEmail = userEmail;
+        this.userGender = userGender;
         this.userContact = userContact;
         this.userAddress = userAddress;
     }
 
-    private String userId, userName, userEmail, userContact, userAddress;
+    public User() {
+    }
+
+    private String userId, userName, userGender, userContact, userAddress;
 
     public String getUserId() {
         return userId;
@@ -28,12 +31,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public String getUserGender() {
+        return userGender;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setUserEmail(String userGender) {
+        this.userGender = userGender;
     }
 
     public String getUserContact() {

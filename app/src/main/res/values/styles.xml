@@ -22,5 +22,9 @@
 
     </style>
 
+    <style name="mySpinnerItemColor" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/textColor</item>
+
+    </style>
 
 </resources>

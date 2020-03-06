@@ -1,7 +1,5 @@
 package com.example.new_serveasy.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.new_serveasy.R;
 import com.example.new_serveasy.models.Vehicle;
@@ -29,6 +29,7 @@ public class VehicleDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle_details);
+
 
         //get instance of firebase instance
         dbVehicle = FirebaseDatabase.getInstance().getReference("vehicles");
@@ -60,8 +61,9 @@ public class VehicleDetails extends AppCompatActivity {
         final String mBrand = brandSpinner.getSelectedItem().toString();
         final String mVehicleType = "Bike";
         final String mModel = modelSpinner.getSelectedItem().toString();
-        String mFuelType = "";
+
         final String mModelYear = modelYearSpinner.getSelectedItem().toString();
+        String mFuelType = "";
         if (petrolButton.isChecked()) {
             mFuelType = petrolButton.getText().toString();
         }

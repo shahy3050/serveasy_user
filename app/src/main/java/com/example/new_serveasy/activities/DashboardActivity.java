@@ -3,6 +3,7 @@ package com.example.new_serveasy.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -12,6 +13,7 @@ import com.example.new_serveasy.R;
 public class DashboardActivity extends AppCompatActivity {
 
     private CardView addVehicle, searchGarage, feedback, profile, serviceathome, support;
+    private ImageView shutdown;
 
 
     @Override
@@ -26,6 +28,7 @@ public class DashboardActivity extends AppCompatActivity {
         profile = findViewById(R.id.profile_card_view);
         support = findViewById(R.id.support_card_view);
         serviceathome = findViewById(R.id.service_at_home_card_view);
+        shutdown = findViewById(R.id.shutdown_iv);
 
         addVehicle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +65,7 @@ public class DashboardActivity extends AppCompatActivity {
         serviceathome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardActivity.this, ProfileActivity.class));
+                startActivity(new Intent(DashboardActivity.this, MainActivity.class));
 
             }
 
@@ -70,10 +73,18 @@ public class DashboardActivity extends AppCompatActivity {
         support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardActivity.this, ProfileActivity.class));
+                startActivity(new Intent(DashboardActivity.this, MainActivity.class));
 
             }
 
+        });
+
+        shutdown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashboardActivity.this, SignInActivity.class));
+                finish();
+            }
         });
 
 

@@ -24,6 +24,14 @@
 
 
     <!--vehicle brand name -->
+    <string-array name="brandname">
+        <item name="Suzuki" />
+        <item name="yamaha" />
+        <item name="TVS" />
+        <item name="Bajaj" />
+
+
+    </string-array>
     <string name="brandname1">Brand</string>
     <string name="brandname2">Suzuki</string>
     <string name="brandname3">Yamaha</string>

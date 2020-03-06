@@ -22,6 +22,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/p_name_input"
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginStart="30dp"
@@ -35,11 +36,12 @@
             android:id="@+id/p_name_et"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:hint="Name"
+            android:hint="Full Name"
             android:textColor="@color/colorPrimaryDark" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/p_contact_input"
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginStart="30dp"
@@ -57,25 +59,46 @@
             android:textColor="@color/colorPrimaryDark" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
+
+    <RadioGroup
         android:layout_width="350dp"
-        android:layout_height="65dp"
+        android:layout_height="45dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:textColorHint="@color/colorPrimaryDark"
-        app:errorTextColor="#FF0000"
-        app:hintTextColor="@color/colorPrimaryDark">
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/p_email_et"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="Email"
-            android:textColor="@color/colorPrimaryDark" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Gender:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="50dp"
+            android:text="Male"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="50dp"
+            android:text="Female"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/p_address_input"
         android:layout_width="350dp"
         android:layout_height="120dp"
         android:layout_marginStart="30dp"

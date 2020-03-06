@@ -55,7 +55,9 @@
                 android:layout_marginTop="275dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="bottom"
+                android:textColorHint="@color/colorPrimary"
                 app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -65,11 +67,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="#287F68A8"
-
                     android:hint="Email"
                     android:inputType="textEmailAddress"
+                    android:padding="15dp"
                     android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/colorPrimaryDark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,7 +82,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="30dp"
+                android:textColorHint="@color/colorPrimary"
+
                 app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,10 +95,12 @@
                     android:id="@+id/password_edit_text_login"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
+                    android:background="#287F68A8"
                     android:hint="@string/password"
                     android:inputType="textPassword"
+
+                    android:padding="15dp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textColorHint="@color/colorPrimary"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
