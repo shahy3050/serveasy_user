@@ -30,13 +30,14 @@
         android:columnCount="2"
         android:columnOrderPreserved="false"
         android:padding="10dp"
-        android:rowCount="3">
+        android:rowCount="3"
+        android:layout_gravity="center">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/add_vehicle_card_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="50dp"
             app:cardBackgroundColor="@color/white"
             android:layout_gravity="center">
 
@@ -50,11 +51,12 @@
                 android:id="@+id/add_vehicle_txtview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Select Vehicle"
+                android:text="My Vehicle"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
                 android:textSize="12sp"
-                android:layout_marginStart="15dp"/>
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -67,8 +69,10 @@
 
             <ImageView
                 android:id="@+id/search_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/search" />
             <TextView
                 android:id="@+id/search_garage_txtview"
@@ -78,6 +82,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
                 android:textSize="12sp"
+                android:textStyle="bold"
                 android:layout_marginStart="15dp"/>
         </androidx.cardview.widget.CardView>
 
@@ -85,7 +90,7 @@
             android:id="@+id/profile_card_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="30dp"
             app:cardBackgroundColor="@color/white">
 
@@ -100,11 +105,12 @@
                 android:id="@+id/profile_txtview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile"
+                android:text="My Profile"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
                 android:textSize="12sp"
-                android:layout_marginStart="32dp"/>
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -131,6 +137,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
                 android:textSize="12sp"
+                android:textStyle="bold"
                android:layout_marginLeft="8dp"/>
 
         </androidx.cardview.widget.CardView>
@@ -140,7 +147,7 @@
             android:id="@+id/support_card_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="30dp"
             app:cardBackgroundColor="@color/white">
 
@@ -157,6 +164,7 @@
                 android:text="Customer Support"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
+                android:textStyle="bold"
                 android:textSize="12sp"
                 />
 
@@ -186,6 +194,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="bottom"
                 android:textSize="12sp"
+                android:textStyle="bold"
                 android:layout_marginStart="25dp"/>
 
 

@@ -23,6 +23,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="71dp"
                 android:layout_marginBottom="14dp"
+                android:layout_marginLeft="20dp"
                 android:text="Hello There,"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
@@ -65,7 +66,7 @@
                 <EditText
                     android:id="@+id/uname_editext_signup"
                     android:layout_width="300dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:hint="Username"
                     android:inputType="textPersonName"
                     android:padding="15dp"
@@ -91,7 +92,7 @@
                 <EditText
                     android:id="@+id/email_edit_text_signup"
                     android:layout_width="300dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:padding="15dp"
@@ -109,19 +110,21 @@
                 android:layout_marginBottom="10dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
-
                 app:layout_constraintBottom_toTopOf="@+id/conf_pass_text_input"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:endIconMode="password_toggle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/semail_text_input">
 
                 <EditText
                     android:id="@+id/password_edittext_signup"
                     android:layout_width="300dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:hint="Password"
+                    android:textColor="@color/colorPrimaryDark"
                     android:padding="15dp"
                     android:textSize="16sp"
+                    app:endIconMode="password_toggle"
                     android:background="@drawable/background_et"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -138,15 +141,18 @@
                 app:layout_constraintBottom_toTopOf="@+id/signup_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:endIconMode="password_toggle"
                 app:layout_constraintTop_toBottomOf="@+id/spass_text_input">
 
                 <EditText
                     android:id="@+id/conf_pass_edit_text"
                     android:layout_width="300dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:hint="Confirm Password"
                     android:padding="15dp"
+                    app:endIconMode="password_toggle"
                     android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
                     android:background="@drawable/background_et"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
