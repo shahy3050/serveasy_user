@@ -37,15 +37,24 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="70dp"
-            app:cardBackgroundColor="@color/white">
+            app:cardBackgroundColor="@color/white"
+            android:layout_gravity="center">
 
             <ImageView
                 android:id="@+id/add_vehicle_image_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/car"
+                android:src="@drawable/car"/>
 
-                />
+            <TextView
+                android:id="@+id/add_vehicle_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Vehicle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -54,7 +63,6 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="40dp"
-
             app:cardBackgroundColor="@color/white">
 
             <ImageView
@@ -62,6 +70,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/search" />
+            <TextView
+                android:id="@+id/search_garage_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Garage"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -74,11 +91,20 @@
 
             <ImageView
                 android:id="@+id/profile_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/user_icon">
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/user_icon"/>
 
-            </ImageView>
+            <TextView
+                android:id="@+id/profile_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                android:layout_marginStart="32dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -93,9 +119,19 @@
 
             <ImageView
                 android:id="@+id/service_at_home_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/service_at_home" />
+            <TextView
+                android:id="@+id/service_at_home_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service At Home"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+               android:layout_marginLeft="8dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -114,6 +150,17 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/support" />
 
+            <TextView
+                android:id="@+id/support_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Support"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                />
+
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -126,12 +173,25 @@
 
             <ImageView
                 android:id="@+id/feedback_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
                 android:src="@drawable/feedback" />
+
+            <TextView
+                android:id="@+id/feedback_txtview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                android:layout_marginStart="25dp"/>
 
 
         </androidx.cardview.widget.CardView>
+
+
 
 
     </GridLayout>
