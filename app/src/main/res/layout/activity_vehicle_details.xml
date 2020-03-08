@@ -52,7 +52,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
             android:autofillHints="@string/brandname1"
-            android:background="@color/colorAccent"
+            android:background="@drawable/background_et"
             android:entries="@array/brandlist"
             android:prompt="@string/brandname1" />
 
@@ -62,7 +62,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/background_et"
 
             android:entries="@array/modellist"
             android:prompt="@string/modelname1" />
@@ -112,8 +112,8 @@
             android:layout_height="35dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:background="@color/colorAccent"
-
+            android:background="@drawable/background_et"
+            android:autofillHints="Year"
             android:entries="@array/modelyear"
             android:prompt="@string/modelyear1" />
 
@@ -123,15 +123,17 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:gravity="bottom"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
             app:hintTextColor="@color/colorPrimaryDark">
 
             <EditText
                 android:id="@+id/rcnumber_edittext"
                 android:layout_width="300dp"
-                android:layout_height="45dp"
-                android:background="@color/colorAccent"
-                android:hint="Enter R.C Number" />
+                android:layout_height="50dp"
+                android:hint="@string/enter_r_c_number"
+                android:padding="15dp"
+                android:background="@drawable/background_et"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

@@ -44,7 +44,7 @@
         android:layout_width="350dp"
         android:layout_height="155dp"
         android:gravity="bottom"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
         app:hintTextColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/send_feedback_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
             android:layout_width="350dp"
             android:layout_height="135dp"
             android:gravity="top"
-            android:background="@color/lightBlue"
+            android:background="#F2EBFE"
             android:hint="Provide Your Feedback"
             android:textSize="14sp" />
 

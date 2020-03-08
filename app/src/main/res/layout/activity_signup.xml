@@ -49,11 +49,11 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/uname_text_input"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="21dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="bottom"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
@@ -64,22 +64,23 @@
 
                 <EditText
                     android:id="@+id/uname_editext_signup"
-                    android:layout_width="350dp"
+                    android:layout_width="300dp"
                     android:layout_height="45dp"
-                    android:layout_marginBottom="10dp"
                     android:hint="Username"
                     android:inputType="textPersonName"
                     android:padding="15dp"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/background_et"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/semail_text_input"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="22dp"
+                android:layout_marginBottom="10dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toTopOf="@+id/spass_text_input"
@@ -89,22 +90,23 @@
 
                 <EditText
                     android:id="@+id/email_edit_text_signup"
-                    android:layout_width="350dp"
+                    android:layout_width="300dp"
                     android:layout_height="45dp"
-                    android:layout_marginBottom="10dp"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:padding="15dp"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/background_et"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/spass_text_input"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
 
@@ -115,22 +117,22 @@
 
                 <EditText
                     android:id="@+id/password_edittext_signup"
-                    android:layout_width="350dp"
+                    android:layout_width="300dp"
                     android:layout_height="45dp"
-                    android:layout_marginBottom="10dp"
                     android:hint="Password"
                     android:padding="15dp"
-
+                    android:textSize="16sp"
+                    android:background="@drawable/background_et"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/conf_pass_text_input"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="41dp"
+                android:layout_marginBottom="10dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:hintTextColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toTopOf="@+id/signup_button"
@@ -140,29 +142,27 @@
 
                 <EditText
                     android:id="@+id/conf_pass_edit_text"
-                    android:layout_width="350dp"
+                    android:layout_width="300dp"
                     android:layout_height="45dp"
-                    android:layout_marginBottom="15dp"
                     android:hint="Confirm Password"
                     android:padding="15dp"
-
+                    android:textSize="16sp"
+                    android:background="@drawable/background_et"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/signup_button"
-                android:layout_width="330dp"
+                android:layout_width="250dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="21dp"
                 android:background="@drawable/button"
                 android:gravity="center"
                 android:onClick="signUp"
                 android:text="Sign Up &amp; Login"
                 android:textColor="#ffffff"
-                android:textSize="17sp"
-                app:layout_constraintBottom_toTopOf="@+id/label_signin"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.476"
                 app:layout_constraintStart_toStartOf="parent"
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="90dp"
                 android:layout_marginEnd="92dp"
-                android:layout_marginBottom="73dp"
+                android:layout_marginBottom="164dp"
                 android:fontFamily="sans-serif"
                 android:onClick="signInExistingUser"
                 android:padding="10dp"
@@ -185,8 +185,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/signup_button"
-                app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/signup_button" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

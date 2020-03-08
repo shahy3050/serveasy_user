@@ -77,4 +77,5 @@
     <string name="location6">Balewadi</string>
     <string name="location7">Baner</string>
     <string name="password">Password</string>
+    <string name="enter_r_c_number">Enter R.C Number</string>
 </resources>
